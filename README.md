@@ -2,7 +2,7 @@
 
 ## Overview of the analysis
 
-As part of this project, we used several techniques to evaluate and train models on credit card credit datasets from LendingClub. We used the imbalanced-learn and scikit-learn libraries to build and evaluate our models using resampling.
+As part of this project, we used several techniques to evaluate and train models on credit card credit datasets from LendingClub. Our purpose is to predict High and low credit risk based on many different features. We used the imbalanced-learn and scikit-learn libraries to build and evaluate our models using resampling.
 
 The RandomOverSampler and SMOTE algorithms were used to oversample the data, followed by the ClusterCentroids algorithm to undersample it. A combinatorial method of over- and undersampling was also used, using the SMOTEENN algorithm. 
 
@@ -14,4 +14,5 @@ Next, we applied two machine learning models that reduce bias, BalancedRandomFor
 
 ## Summary
 
+Since we predict credit risk, we mostly care about having a model with high precision in detecting high-risk customers. Unfortunately, all the six models did not perform well since the precision of high-risk customers is very close to zero. The easy ensemble AdaBoost classifier performed the best with 93% accuracy between the six models. I recommend adding minority data to have a better model or trying different models such as bagging and bootstrapping. 
 
