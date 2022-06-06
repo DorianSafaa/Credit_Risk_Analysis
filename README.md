@@ -14,5 +14,5 @@ Next, we applied two machine learning models that reduce bias, BalancedRandomFor
 
 ## Summary
 
-Since we predict credit risk, we mostly care about having a model with high precision in detecting high-risk customers. Unfortunately, all the six models did not perform well since the precision of high-risk customers is very close to zero. The easy ensemble AdaBoost classifier performed the best with 93% accuracy between the six models. I recommend adding minority class to have a better model or trying to add stronger features that can detect the low risk costumers. 
+Since we predict credit risk, we mostly care about having a model with high precision in detecting high-risk customers. Unfortunately, all the six models did not perform well since the precision of high-risk customers is very close to zero. The easy ensemble AdaBoost classifier performed the best with 93% accuracy between the six models. I recommend adding more data about the minority class to have a better model or trying to add stronger features that can detect the low risk costumers. 
 
